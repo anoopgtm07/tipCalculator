@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" type="text/css" href="tips.css">
+    </head>
+    <body onload="initClock()">
+        <!--Digital clock code-->
+        <section class="digitalTime">
+            <div class="dateTime">
+                <div class="date">
+                    <span id="dayName">Day</span>
+                    <span id="month">Month</span>
+                    <span id="dayNum">00</span>
+                    <span id="year">Year</span>
+                </div>
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="pe">AM</span>
+                </div>
+            </div>
+
+        </section>
+        <!--Digital clock code ends-->
+        <section>
+        <div class="container">
+            <h1>Tip Calculator</h1>
+            <div class="billBox">
+                <label for="billAmount">Bill Amount</label>
+                <input type="number" id="billAmount" name = 'billAmount' placeholder="100"> <br>
+                <label for="tipPercentage">Percentage</label>
+                <input type="number" id="tipPercentage" name = 'percentage' placeholder="5"> <br>
+               
+                <div class="billSection">
+                    <label for="tipAmount">Total Tip Amount:</label>
+                    <input type="text" id="tipAmount"><br>
+                    <label for="totalAmount">Total Bill with Tip:</label>
+                    <input type="text" id="totalAmount"><br>
+                </div>
+                <button id="calculate" value="calculate">Calculate Tip</button>
+
+            </div>
+        </div>
+        </section>
+    </body>
+    <script src="tips.js"></script>
+    
+</html>
